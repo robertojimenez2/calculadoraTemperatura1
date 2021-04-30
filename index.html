@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/tailwind.css">
+    <title>Conversor free</title>
+</head>
+<body>
+    <header class="">
+        <section id="header" class="object-center flex textos-header">
+            <h1>Conversor de temperaturas</h1>
+            <p>Convierte una escala de temperatua a otra de manera rápida y sencilla</p>
+        </section>
+    </header>
+
+<div class="container mx-auto">
+    <div class="container mx-auto">
+        <section class=" conversores" id="contenido">
+            <p>Introduce unicamente el número</p>
+            <form action="#" class="mt-10 max-w-lg mx-auto" id="calcular">
+                
+                <div class="flex items-center mb-5">
+                    <label for="temperatura-inicial" class="font-bold  uppercase mr-2 w-20">Escala inicial</label>
+                <select class="flex-1 bg-gray-100 p-3 appearance-none select-1 focus" id="temperatura-inicial">
+                    <option value="">Seleccione una escala</option>
+                    <option value="farenheit">Farenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                    <option value="rankine">Rankine</option>
+                    <option value="celsius">Celsius</option>
+            </select>
+            
+            
+                </div>
+
+                <div class="div-input">
+                    <input id="valor-1" type="text" placeholder="Introduce el valor" class="space flex-1 bg-gray-100 p-3 appearance-none">
+                </div>
+                
+                <div class="flex items-center mb-5">
+                    <label for="temperatura-final" class="font-bold  uppercase mr-2 w-20">Escala final</label>
+                <select name="select-2" class="select-2 flex-1 bg-gray-100 p-3 appearance-none" id="select-temperatura-final">
+                    <option value="">Seleccione una escala</option>
+                    <option value="farenheit">Farenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                    <option value="rankine">Rankine</option>
+                    <option value="celsius">Celsius</option>
+            </select>
+        </div>
+
+            <div>
+                <h1>Presiona el botón para continuar</h1>
+            </div>
+
+            <div id="resultado"></div>
+
+            <div class="flex justify-center py-4">
+                <button 
+                type="submit" class="mx-auto bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-20 rounded btn-calcular" id="btn-calcular"
+                >Calcular
+            </button>
+            </div>
+            
+        
+            
+            </form>
+        </section>
+    </div>
+    
+</div>
+
+<footer>
+    Todos los derechos reservados. Copyright. 2021
+</footer>
+    
+        <script src="./script.js"></script>
+    
+</body>
+</html>
